@@ -79,6 +79,9 @@ export const headingLoaderStyles = css`
 `;
 
 export const branchCardStyles = css`
+	:host {
+		--gl-card-hover-background: color-mix(in lab, var(--vscode-sideBar-background) 100%, #fff 8%);
+	}
 	.branch-item {
 		position: relative;
 	}
@@ -158,6 +161,10 @@ export const branchCardStyles = css`
 		background-color: var(--gl-card-background);
 	}
 
+	.branch-item:hover .branch-item__actions,
+	.branch-item:focus-within .branch-item__actions {
+		background-color: var(--gl-card-hover-background);
+	}
 	.branch-item:not(:focus-within):not(:hover) .branch-item__actions {
 		display: none;
 	}
