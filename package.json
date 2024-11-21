@@ -1,13 +1,13 @@
 {
-	"name": "gitlens",
-	"displayName": "GitLens — Git supercharged",
+	"name": "gitlenss",
+	"displayName": "GitLenss for AvanLan",
 	"description": "Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more",
 	"version": "16.0.2",
 	"engines": {
 		"vscode": "^1.82.0"
 	},
 	"license": "SEE LICENSE IN LICENSE",
-	"publisher": "eamodio",
+	"publisher": "avanlan",
 	"author": {
 		"name": "Eric Amodio",
 		"email": "eamodio@gmail.com"
@@ -40,6 +40,9 @@
 		"theme": "dark"
 	},
 	"keywords": [
+		"gitlenss",
+		"avan",
+		"avanlan",
 		"gitlens",
 		"git",
 		"blame",
@@ -19688,7 +19691,6 @@
 		"mini-css-extract-plugin": "2.9.2",
 		"mocha": "10.8.2",
 		"ovsx": "0.10.0",
-		"playwright": "1.48.2",
 		"prettier": "3.1.0",
 		"sass": "1.80.6",
 		"sass-loader": "16.0.3",

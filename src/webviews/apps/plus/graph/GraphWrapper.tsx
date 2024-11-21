@@ -281,7 +281,7 @@ export function GraphWrapper({
 	const [branch, setBranch] = useState(state.branch);
 	const [lastFetched, setLastFetched] = useState(state.lastFetched);
 	const [windowFocused, setWindowFocused] = useState(state.windowFocused);
-	const [allowed, setAllowed] = useState(state.allowed ?? false);
+	const [allowed, setAllowed] = useState(true);
 	const [subscription, setSubscription] = useState<Subscription | undefined>(state.subscription);
 	const [featurePreview, setFeaturePreview] = useState(state.featurePreview);
 
@@ -323,7 +323,7 @@ export function GraphWrapper({
 				break;
 			case DidStartFeaturePreviewNotification:
 				setFeaturePreview(state.featurePreview);
-				setAllowed(state.allowed ?? false);
+				setAllowed(true);
 				break;
 			case DidChangeAvatarsNotification:
 				setAvatars(state.avatars);
@@ -385,7 +385,7 @@ export function GraphWrapper({
 				}
 				break;
 			case DidChangeSubscriptionNotification:
-				setAllowed(state.allowed ?? false);
+				setAllowed(true);
 				setSubscription(state.subscription);
 				break;
 			case DidChangeWorkingTreeNotification:
@@ -400,7 +400,7 @@ export function GraphWrapper({
 				break;
 			default: {
 				hover.current?.reset();
-				setAllowed(state.allowed ?? false);
+				setAllowed(true);
 				if (!themingChanged) {
 					setStyleProps(state.theming);
 				}
